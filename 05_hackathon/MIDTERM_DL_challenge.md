@@ -24,7 +24,7 @@ Design, implement, and deploy a multi-part AI-powered system that demonstrates y
 
 ### Task 1: Design Your System
 
-- [ ] **Choose 1 of 3 provided problems to solve (given day of)**
+- [ ] **Solve the problem described in [MIDTERM_DL_challenge_prompts.md](MIDTERM_DL_challenge_prompts.md)**
 - [ ] Design a pipeline that integrates:
   - **Supabase database** (data storage)
   - **REST API** (data access layer)
