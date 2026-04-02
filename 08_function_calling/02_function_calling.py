@@ -29,10 +29,9 @@ PORT = 11434
 OLLAMA_HOST = f"http://localhost:{PORT}"
 CHAT_URL = f"{OLLAMA_HOST}/api/chat"
 
-# 1. DEFINE A FUNCTION TO BE USED AS A TOOL ###################################
+# 1. DEFINE FUNCTIONS TO BE USED AS TOOLS ###################################
 
-# Define a function to be used as a tool
-# This function must be defined in the global scope so it can be called
+# Each function must be defined in the global scope so it can be called
 def add_two_numbers(x, y):
     """
     Add two numbers together.
@@ -50,6 +49,26 @@ def add_two_numbers(x, y):
         Sum of x and y
     """
     return x + y
+
+
+def multiply_numbers(x, y):
+    """
+    Multiply two numbers together.
+
+    Parameters:
+    -----------
+    x : float
+        First factor
+    y : float
+        Second factor
+
+    Returns:
+    --------
+    float
+        Product of x and y
+    """
+    return float(x) * float(y)
+
 
 # 2. DEFINE TOOL METADATA ###################################
 
@@ -75,6 +94,23 @@ tool_add_two_numbers = {
             }
         }
     }
+}
+
+
+tool_multiply_numbers = {
+    "type": "function",
+    "function": {
+        "name": "multiply_numbers",
+        "description": "Multiply two numbers",
+        "parameters": {
+            "type": "object",
+            "required": ["x", "y"],
+            "properties": {
+                "x": {"type": "number", "description": "first factor"},
+                "y": {"type": "number", "description": "second factor"},
+            },
+        },
+    },
 }
 
 # 3. CREATE CHAT REQUEST WITH TOOLS ###################################
@@ -120,3 +156,37 @@ if "tool_calls" in result.get("message", {}):
             tool_call["output"] = output
 else:
     print("No tool calls in response")
+
+# 5. SECOND EXAMPLE: multiply_numbers ###################################
+
+messages_mult = [
+    {
+        "role": "user",
+        "content": "What is 7 times 6? Use the multiply_numbers tool.",
+    }
+]
+
+body_mult = {
+    "model": MODEL,
+    "messages": messages_mult,
+    "tools": [tool_multiply_numbers],
+    "stream": False,
+}
+
+response_mult = requests.post(CHAT_URL, json=body_mult)
+response_mult.raise_for_status()
+result_mult = response_mult.json()
+
+if "tool_calls" in result_mult.get("message", {}):
+    tool_calls_mult = result_mult["message"]["tool_calls"]
+    for tool_call in tool_calls_mult:
+        func_name = tool_call["function"]["name"]
+        raw_args = tool_call["function"].get("arguments", {})
+        func_args = json.loads(raw_args) if isinstance(raw_args, str) else raw_args
+        func = globals().get(func_name)
+        if func:
+            output = func(**func_args)
+            print(f"multiply_numbers tool result: {output}")
+            tool_call["output"] = output
+else:
+    print("No tool calls in response (multiply example)")

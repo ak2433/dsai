@@ -47,6 +47,31 @@ TOOLS <- list(
       ),
       required = list("dataset_name")
     )
+  ),
+  list(
+    name        = "filter_dataset_rows",
+    description = paste0(
+      "Return rows where a column equals a value (compared as character). ",
+      "Examples: iris Species 'setosa'; mtcars cyl '4'."
+    ),
+    inputSchema = list(
+      type       = "object",
+      properties = list(
+        dataset_name = list(
+          type        = "string",
+          description = "Dataset name: 'mtcars' or 'iris'."
+        ),
+        column_name = list(
+          type        = "string",
+          description = "Column to filter (e.g. 'Species', 'cyl')."
+        ),
+        value = list(
+          type        = "string",
+          description = "Value to match (e.g. 'setosa', '4')."
+        )
+      ),
+      required = list("dataset_name", "column_name", "value")
+    )
   )
 )
 
@@ -77,6 +102,24 @@ run_tool <- function(name, args) {
       tidyr::pivot_wider(names_from = stat, values_from = value)
 
     return(toJSON(result, auto_unbox = TRUE, pretty = TRUE))
+  }
+
+  if (name == "filter_dataset_rows") {
+    datasets <- list(mtcars = mtcars, iris = iris)
+    nm <- args$dataset_name
+    if (!nm %in% names(datasets)) {
+      stop(paste("Unknown dataset:", nm, "- choose 'mtcars' or 'iris'"))
+    }
+    col <- args$column_name
+    val <- args$value
+    df <- datasets[[nm]]
+    if (!col %in% names(df)) {
+      stop(paste("Unknown column:", col))
+    }
+    out <- df |>
+      dplyr::filter(as.character(.data[[col]]) == as.character(val)) |>
+      head(200L)
+    return(toJSON(out, auto_unbox = TRUE, pretty = TRUE))
   }
 
   stop(paste("Unknown tool:", name))

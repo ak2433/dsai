@@ -69,6 +69,31 @@ def get_table(df=None):
         df = pd.DataFrame([df])
     return df.to_markdown(index=False)
 
+
+def calculate_average(numbers):
+    """
+    Compute the arithmetic mean of a list of numbers.
+
+    Parameters:
+    -----------
+    numbers : list
+        Numeric values to average (JSON array from the model)
+
+    Returns:
+    --------
+    float
+        The mean of the numbers
+    """
+    if not numbers:
+        return 0.0
+    return float(sum(numbers)) / len(numbers)
+
+
+def multiply_numbers(x, y):
+    """Multiply two numbers together."""
+    return float(x) * float(y)
+
+
 # 2. DEFINE TOOL METADATA ###################################
 
 # Define the tool metadata for add_two_numbers
@@ -111,6 +136,44 @@ tool_get_table = {
             }
         }
     }
+}
+
+
+# Tool metadata for calculate_average (Stage 2: new tool)
+tool_calculate_average = {
+    "type": "function",
+    "function": {
+        "name": "calculate_average",
+        "description": "Compute the arithmetic mean of a list of numbers",
+        "parameters": {
+            "type": "object",
+            "required": ["numbers"],
+            "properties": {
+                "numbers": {
+                    "type": "array",
+                    "items": {"type": "number"},
+                    "description": "The values to average (e.g. 10, 20, 30)",
+                }
+            },
+        },
+    },
+}
+
+
+tool_multiply_numbers = {
+    "type": "function",
+    "function": {
+        "name": "multiply_numbers",
+        "description": "Multiply two numbers",
+        "parameters": {
+            "type": "object",
+            "required": ["x", "y"],
+            "properties": {
+                "x": {"type": "number", "description": "first factor"},
+                "y": {"type": "number", "description": "second factor"},
+            },
+        },
+    },
 }
 
 # 3. EXAMPLE 1: STANDARD CHAT (NO TOOLS) ###################################
@@ -170,5 +233,52 @@ print("Manual Table Creation:")
 manual_table = df.to_markdown(index=False)
 print(manual_table)
 print()
+
+# 6. EXAMPLE 4: TOOL CALL #3 (calculate_average) ###################################
+
+messages = [
+    {
+        "role": "user",
+        "content": "Use the calculate_average tool to find the mean of 10, 20, and 30. Call the tool with those three numbers.",
+    }
+]
+
+resp3 = agent(
+    messages=messages,
+    model=MODEL,
+    output="tools",
+    tools=[tool_calculate_average],
+)
+print("Tool Call #3 Result (calculate_average):")
+print(resp3)
+print()
+if isinstance(resp3, list) and len(resp3) > 0:
+    print(f"Tool output: {resp3[0].get('output', 'No output')}")
+    print()
+
+# 7. EXAMPLE 5: TOOL CALL #4 (multiply_numbers) ###################################
+
+messages = [
+    {
+        "role": "user",
+        "content": (
+            "Use the multiply_numbers tool to compute 7 times 6. "
+            "Call the tool with x=7 and y=6."
+        ),
+    }
+]
+
+resp4 = agent(
+    messages=messages,
+    model=MODEL,
+    output="tools",
+    tools=[tool_multiply_numbers],
+)
+print("Tool Call #4 Result (multiply_numbers):")
+print(resp4)
+print()
+if isinstance(resp4, list) and len(resp4) > 0:
+    print(f"Tool output: {resp4[0].get('output', 'No output')}")
+    print()
 
 # Note: We can use the agent() function to rapidly build and test out agents with or without tools.
