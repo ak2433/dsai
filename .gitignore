@@ -4,3 +4,6 @@
 **/_pycache_
 docs/.prep/.canvas
 03_query_ai/05_reporting_report.*
+08_function_calling/mcp_plumber/rsconnect/
+08_function_calling/mcp_fastapi/rsconnect/
+08_function_calling/mcp_fastapi/rsconnect-python/

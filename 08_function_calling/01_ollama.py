@@ -3,6 +3,9 @@
 # Pairs with 01_ollama.sh / 01_ollama.R
 # Tim Fraser (Python adaptation)
 
+# Launch on powershell with:
+# python 08_function_calling/01_ollama.py
+
 # This script configures environment variables for Ollama,
 # then starts `ollama serve` in the background without blocking
 # the Python session. Useful for starting a local LLM server
