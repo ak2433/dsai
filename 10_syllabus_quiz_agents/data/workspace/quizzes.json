@@ -1,0 +1,1469 @@
+[
+  {
+    "section_id": "sec-0",
+    "title": "Semester Course Curriculum",
+    "questions": [
+      {
+        "question": "What are the primary areas of focus in HIST 3050 that students will study?",
+        "choices": [
+          "A. World History I",
+          "B. Political Systems and Governance",
+          "C. Economic Development and Policies",
+          "D. Social Movements and Change"
+        ],
+        "correct_index": 1
+      },
+      {
+        "question": "What is the primary teaching method used in HIST 3050?",
+        "choices": [
+          "A. Lecture-based learning with handouts",
+          "B. Interactive group projects and case studies",
+          "C. Fieldwork and observations of historical sites",
+          "D. Simulation exercises based on real-world scenarios"
+        ],
+        "correct_index": 2
+      },
+      {
+        "question": "What is the purpose of HIST 3050 in the course curriculum?",
+        "choices": [
+          "A. To introduce upper division students to critical thinking skills",
+          "B. To provide a comprehensive overview of political systems and governance",
+          "C. To delve into historical events with an interdisciplinary approach",
+          "D. To foster analytical thinking through case studies"
+        ],
+        "correct_index": 0
+      }
+    ]
+  },
+  {
+    "section_id": "sec-1",
+    "title": "Instructor Information",
+    "questions": [
+      {
+        "question": "What is the name of the course instructor?",
+        "choices": [
+          "Alice Smith",
+          "Bob Johnson",
+          "Charlie Brown",
+          "David Lee"
+        ],
+        "correct_index": 2
+      }
+    ]
+  },
+  {
+    "section_id": "sec-3",
+    "title": "Learning Objectives",
+    "questions": [
+      {
+        "question": "1. Define and critically analyze competing definitions of \"terrorism\" and \"political violence\"",
+        "choices": [
+          "A",
+          "B",
+          "C",
+          "D"
+        ],
+        "correct_index": 0
+      },
+      {
+        "question": "2. Trace the historical evolution of terrorist tactics, ideologies, and organizations from antiquity to the 21st century",
+        "choices": [
+          "A",
+          "B",
+          "C",
+          "D"
+        ],
+        "correct_index": 3
+      },
+      {
+        "question": "3. Evaluate the philosophical and ethical debates surrounding the use of political violence",
+        "choices": [
+          "A",
+          "B",
+          "C",
+          "D"
+        ],
+        "correct_index": 0
+      }
+    ]
+  },
+  {
+    "section_id": "sec-5",
+    "title": "Grading Breakdown",
+    "questions": [
+      {
+        "question": "What is the weighted percentage of Attendance & Participation in the course?",
+        "choices": [
+          "A",
+          "B",
+          "C",
+          "D"
+        ],
+        "correct_index": 0
+      },
+      {
+        "question": "How many components are included in this section's assignment breakdown? (Answer '1', '2', or '3')",
+        "choices": [
+          "A",
+          "B",
+          "C"
+        ],
+        "correct_index": 1
+      },
+      {
+        "question": "What is the weighted percentage of Primary Source Analysis Paper?",
+        "choices": [
+          "A",
+          "B",
+          "C",
+          "D"
+        ],
+        "correct_index": 0
+      }
+    ]
+  },
+  {
+    "section_id": "sec-6",
+    "title": "Grading Scale",
+    "questions": [
+      {
+        "question": "What is a common letter grade between 83 and 86?",
+        "choices": [
+          "A+",
+          "A",
+          "B+",
+          "B-"
+        ],
+        "correct_index": 0
+      },
+      {
+        "question": "Which of the following letter grades is closest to an F (below 60)?",
+        "choices": [
+          "C+",
+          "D",
+          "F"
+        ],
+        "correct_index": 2
+      }
+    ]
+  },
+  {
+    "section_id": "sec-8",
+    "title": "Sensitive Content Warning",
+    "questions": [
+      {
+        "question": "Which of the following is NOT a graphic historical event described in this course?",
+        "choices": [
+          "A",
+          "B",
+          "C",
+          "D"
+        ],
+        "correct_index": 2
+      },
+      {
+        "question": "The study of mass casualty events helps students understand what?",
+        "choices": [
+          "A",
+          "B",
+          "C",
+          "D"
+        ],
+        "correct_index": 0
+      },
+      {
+        "question": "What method is used to engage analytically with difficult material in this course?",
+        "choices": [
+          "A",
+          "B",
+          "C",
+          "D"
+        ],
+        "correct_index": 1
+      }
+    ]
+  },
+  {
+    "section_id": "sec-9",
+    "title": "Academic Integrity",
+    "questions": [
+      {
+        "question": "What constitutes plagiarism according to the course guidelines?",
+        "choices": [
+          "A. Failure to cite sources correctly",
+          "B. Accidental copying of someone else's work",
+          "C. Submitting a previously submitted assignment without proper citation",
+          "D. Failure to accurately paraphrase content"
+        ],
+        "correct_index": 3
+      }
+    ]
+  },
+  {
+    "section_id": "sec-10",
+    "title": "Respectful Dialogue",
+    "questions": [
+      {
+        "question": "Which method of argumentation is most effective in fostering respectful dialogue?",
+        "choices": [
+          "A. Ad Hominem attacks",
+          "B. Dismissiveness and condescension",
+          "C. Grandstanding and emotional appeals",
+          "D. Focused analysis of the topic"
+        ],
+        "correct_index": 2
+      },
+      {
+        "question": "To engage with a politically charged issue effectively, it is best to:",
+        "choices": [
+          "A. Avoid discussing sensitive topics entirely",
+          "B. Seek common ground and compromise at all costs",
+          "C. Prioritize one's own interests over others' rights",
+          "D. Use emotionally charged language"
+        ],
+        "correct_index": 0
+      },
+      {
+        "question": "Students should approach ideologies they find repugnant with:",
+        "choices": [
+          "A. A critical eye, but no empathy for those who hold them",
+          "B. Sympathetic understanding and willingness to listen",
+          "C. A dismissive attitude and refusal to engage",
+          "D. Analytical rigor while maintaining personal opinions"
+        ],
+        "correct_index": 1
+      }
+    ]
+  },
+  {
+    "section_id": "sec-15",
+    "title": "Wednesday \u2014 The Problem of Definition",
+    "questions": [
+      {
+        "question": "What term is used to describe deliberate targeting of civilians by non-state actors for political ends?",
+        "choices": [
+          "Terrorism",
+          "Guerrilla warfare",
+          "Narco-terrorism",
+          "Insurgency"
+        ],
+        "correct_index": 0
+      },
+      {
+        "question": "Which definition describes the use of terror as a means of achieving a state's political objectives against its own population?",
+        "choices": [
+          "Terrorism",
+          "Guerrilla warfare",
+          "State terrorism",
+          "Narco-terrorism"
+        ],
+        "correct_index": 2
+      },
+      {
+        "question": "Who is labeled as 'terrorists' when their actions are defined under this category, regardless of the context or motivation behind them?",
+        "choices": [
+          "The perpetrators themselves",
+          "Those they claim to represent or target for political reasons",
+          "Governments and international organizations with a vested interest in labeling others as such"
+        ],
+        "correct_index": 1
+      }
+    ]
+  },
+  {
+    "section_id": "sec-18",
+    "title": "Monday \u2014 Who Becomes a Terrorist? Psychological Profiles",
+    "questions": [
+      {
+        "question": "Which of the following terms is associated with Moghaddam's Staircase Model?",
+        "choices": [
+          "A: Psychopathy",
+          "B: Moral disengagement",
+          "C: Cognitive dissonance",
+          "D: Displaced aggression"
+        ],
+        "correct_index": 1
+      },
+      {
+        "question": "In Moghaddam's model, which psychological state leads to the willingness to use violence and terrorism?",
+        "choices": [
+          "A: Moral engagement with terrorist group",
+          "B: Cognitive dissonance",
+          "C: Psychological distress",
+          "D: Perceived injustice"
+        ],
+        "correct_index": 0
+      },
+      {
+        "question": "Which of the following is a significant aspect of the Root Causes Debate in understanding terrorism?",
+        "choices": [
+          "A: Poverty and economic inequality",
+          "B: Humiliation as a key factor",
+          "C: Identity crisis and cultural belongingness",
+          "D: All of the above"
+        ],
+        "correct_index": 1
+      }
+    ]
+  },
+  {
+    "section_id": "sec-19",
+    "title": "Wednesday \u2014 Group Dynamics and Radicalization",
+    "questions": [
+      {
+        "question": "In which location did Mohamed Atta and the Hamburg Cell undergo their radicalization, excluding any obvious pre-existing signs of violent intent?",
+        "choices": [
+          "Amsterdam",
+          "Barcelona",
+          "Berlin",
+          "Hamburg"
+        ],
+        "correct_index": 3
+      },
+      {
+        "question": "Which author's work on terrorism networks would you require to understand the dynamics at play in groups like the Hamburg Cell?",
+        "choices": [
+          "James C. Scott",
+          "Robert Sapolsky",
+          "Gabriel Marcel",
+          "James F. Wright"
+        ],
+        "correct_index": 0
+      },
+      {
+        "question": "What are some of the psychological factors that contribute to radicalization, as described by Sageman's research on terrorist networks?",
+        "choices": [
+          "Pre-existing social networks and personal relationships, group cohesion, charismatic leadership.",
+          "Destitution, poverty, and material needs, lack of belonging, and disillusionment with societal norms.",
+          "Traditional religious values and cultural heritage, community involvement and social support.",
+          "Personal ambition and desire for status or power, exposure to radical ideologies in the media."
+        ],
+        "correct_index": 2
+      }
+    ]
+  },
+  {
+    "section_id": "sec-22",
+    "title": "Monday \u2014 State Terrorism Through History",
+    "questions": [
+      {
+        "question": "What was the original meaning of the word \"terrorism\" and who coined it?",
+        "choices": [
+          "A. It originally referred to violence by non-state actors.",
+          "B. It was first used by the Committee of Public Safety during the French Reign of Terror.",
+          "C. It was a term used by Napoleon Bonaparte.",
+          "D. It originated in ancient Greece"
+        ],
+        "correct_index": 0
+      },
+      {
+        "question": "How many people were executed under Robespierre's Committee of Public Safety (1793\u201394)?",
+        "choices": [
+          "A. 200,000",
+          "B. 100,000",
+          "C. 50,000",
+          "D. 10,000"
+        ],
+        "correct_index": 1
+      },
+      {
+        "question": "What is the distinction made by some historians between 'state terrorism' and 'non-state terrorism', as per Ariel Merari's reading?",
+        "choices": [
+          "A. State terrorism involves government actions that result in fewer deaths.",
+          "B. Non-state terrorism refers to violence carried out by non-governmental groups.",
+          "C. State terrorism is characterized by a focus on state actors, while non-state terrorism focuses on international organizations.",
+          "D. State terrorism is defined as the use of violence against one's own people and non-state terrorism involves violence directed at foreign targets"
+        ],
+        "correct_index": 3
+      }
+    ]
+  },
+  {
+    "section_id": "sec-23",
+    "title": "Wednesday \u2014 Counterterrorism and Civil Liberties",
+    "questions": [
+      {
+        "question": "Which British law created internment camps in Northern Ireland during the late 1960s?",
+        "choices": [
+          "A. The Prevention of Terrorism Act, 1974",
+          "B. The Prevention of Terrorism Act, 1971",
+          "C. The Anti-Terrorism Act, 2005",
+          "D. The Prevention of Violence Act"
+        ],
+        "correct_index": 0
+      },
+      {
+        "question": "What U.S. Supreme Court case established the right to detain people without due process?",
+        "choices": [
+          "A. Ex Parte Milligan",
+          "B. Johnson v. Eisentrager",
+          "C. Korematsu v. United States",
+          "D. Hamdi v. Rumsfeld"
+        ],
+        "correct_index": 3
+      },
+      {
+        "question": "Which modern case involves a person detained under the PATRIOT Act, and what issue has been argued over their treatment?",
+        "choices": [
+          "A. Clapper v. Amnesty International",
+          "B. Ward v. Glucksberg",
+          "C. Rasul v. George W. Bush",
+          "D. Al-Kidd v. Ashcroft"
+        ],
+        "correct_index": 1
+      }
+    ]
+  },
+  {
+    "section_id": "sec-28",
+    "title": "Monday \u2014 Terror in the Ancient World",
+    "questions": [
+      {
+        "question": "What is the name of the Greek term for a dagger or short sword, often used by the Sicarii to commit their assassinations?",
+        "choices": [
+          "A. scimitar",
+          "B. falchion",
+          "C. short sword",
+          "D. sabre"
+        ],
+        "correct_index": 3
+      },
+      {
+        "question": "Who is credited with being one of the first recorded terrorists, using mass atrocities as military strategy?",
+        "choices": [
+          "A. Alexander the Great",
+          "B. Nero",
+          "C. Caligula",
+          "D. Spartacus"
+        ],
+        "correct_index": 1
+      },
+      {
+        "question": "In what year did the Sicarii begin their activities according to Josephus?",
+        "choices": [
+          "A. 63 BCE",
+          "B. 50 CE",
+          "C. 42 CE",
+          "D. 73 CE"
+        ],
+        "correct_index": 2
+      }
+    ]
+  },
+  {
+    "section_id": "sec-29",
+    "title": "Wednesday \u2014 The Assassins: Medieval Islamic Terror Network",
+    "questions": [
+      {
+        "question": "Which Muslim scholar wrote about the origins and ideology of the Nizari Ismailis, describing them as a splinter group from the Fatimid dynasty (909\u20131171 CE)?"
+      },
+      {
+        "question": "According to Lewis, what was Hassan-i Sabbah known for and where did he establish his stronghold?",
+        "choices": [
+          "A. Strategically located near an important trade route",
+          "B. Highly skilled in the art of assassination",
+          "C. A charismatic leader with a vision for a new Islamic caliphate",
+          "D. A master builder with expertise in architecture"
+        ],
+        "correct_index": 1
+      },
+      {
+        "question": "What was the nature of the Nizari Ismailis' use of targeted assassination, and what was its impact on politics during their time?"
+      }
+    ]
+  },
+  {
+    "section_id": "sec-30",
+    "title": "Friday \u2014 The Spanish Inquisition and Religious State Terror",
+    "questions": [
+      {
+        "question": "Which of the following is NOT a key feature of the Inquisition as an institution of social control through fear?",
+        "choices": [
+          "A. Torture, confession, and public spectacle (auto-da-f\u00e9)",
+          "B. Prosecution of heresy",
+          "C. Persecution of witches and Jews",
+          "D. Public execution of heretics"
+        ],
+        "correct_index": 0
+      },
+      {
+        "question": "The intent to commit religious terrorism is a distinguishing characteristic between prosecution and which other activity?",
+        "choices": [
+          "A. Terrorism as an end in itself",
+          "B. Fear-based intimidation",
+          "C. Violence for ideological reasons",
+          "D. Self-defense of one's faith"
+        ],
+        "correct_index": 0
+      },
+      {
+        "question": "In what way was the role of intent crucial to distinguishing prosecution from terrorism during the Inquisition?",
+        "choices": [
+          "A. Intent to harm individuals without provocation.",
+          "B. Intent to protect one's beliefs from perceived threats.",
+          "C. Intent to destroy property as a means of intimidation.",
+          "D. Intent to spread fear and disorder among the population"
+        ],
+        "correct_index": 0
+      }
+    ]
+  },
+  {
+    "section_id": "sec-32",
+    "title": "Monday \u2014 Anarchist Ideology and the \"Propaganda of the Deed\"",
+    "questions": [
+      {
+        "question": "According to Bakunin, what is the relationship between ideas and deeds?",
+        "choices": [
+          "Ideas result from acts, not the latter from the former.",
+          "Deeds result from actions, not the latter from the former.",
+          "Both are equally important, as they lead to change."
+        ],
+        "correct_index": 0
+      },
+      {
+        "question": "What was Pisacane's reasoning behind his concept of 'propaganda of the deed'?",
+        "choices": [
+          "Destruction is often used in warfare, and it can be argued that war itself is a form of propaganda.",
+          "It does not lead to change because ideas result from acts, not the latter from the former.",
+          "It results from a combination of both; destruction can communicate more than a thousand pamphlets."
+        ],
+        "correct_index": 1
+      },
+      {
+        "question": "How did Kropotkin describe the philosophy of destructive violence?",
+        "choices": [
+          "Destruction is often used in warfare, and it can be argued that war itself is a form of propaganda.",
+          "It does not lead to change because ideas result from acts, not the latter from the former.",
+          "It results from a combination of both; destruction can communicate more than a thousand pamphlets."
+        ],
+        "correct_index": 2
+      }
+    ]
+  },
+  {
+    "section_id": "sec-34",
+    "title": "Friday \u2014 The Assassination That Changed the World: Sarajevo, 1914",
+    "questions": [
+      {
+        "question": "Which terrorist group did Gavrilo Princip associate with and what were their goals?",
+        "choices": [
+          "A. Young Bosnia",
+          "B. Black Hand",
+          "C. Russian revolutionaries",
+          "D. French nationalists"
+        ],
+        "correct_index": 0
+      },
+      {
+        "question": "What was the name of the group that assassinated Archduke Franz Ferdinand on June 28, 1914 and what were their tactics?",
+        "choices": [
+          "A. Black Hand",
+          "B. Young Bosnia",
+          "C. Serbian resistance fighters",
+          "D. Bosnian separatists"
+        ],
+        "correct_index": 0
+      },
+      {
+        "question": "What is the term for the combination of circumstances that escalated the assassination into a war, including political interests, nationalistic tensions, and military unpreparedness?",
+        "choices": [
+          "A. Domestic politics",
+          "B. External pressures",
+          "C. Military history",
+          "D. Ideological differences"
+        ],
+        "correct_index": 1
+      }
+    ]
+  },
+  {
+    "section_id": "sec-36",
+    "title": "Monday \u2014 Irish Republicanism and the IRA (1916\u20131940s)",
+    "questions": [
+      {
+        "question": "What British intelligence group did Collins infiltrate and destroy, leading to a temporary blind in British operations in Ireland?",
+        "choices": [
+          "A. The Royal Military Police",
+          "B. The Secret Intelligence Service",
+          "C. The Special Operations Executive",
+          "D. The Bureau of Military Justice"
+        ],
+        "correct_index": 0
+      },
+      {
+        "question": "What methodical approach did Collins employ to dismantle British intelligence networks, leading to the eventual blindness in British operations?",
+        "choices": [
+          "A. Limited himself to assassinations of key targets only",
+          "B. Used advanced technology for surveillance and infiltration",
+          "C. Employed guerrilla warfare tactics on a large scale",
+          "D. Focused solely on urban assassination campaigns"
+        ],
+        "correct_index": 1
+      },
+      {
+        "question": "What was Collins' approach to targeting British agents, which helped establish the modern concept of urban guerrilla warfare?",
+        "choices": [
+          "A. Selective killing of civilian populations",
+          "B. Targeting government officials and military personnel only",
+          "C. Indiscriminate terror tactics against civilians",
+          "D. Focusing solely on targeted assassinations of key targets"
+        ],
+        "correct_index": 0
+      }
+    ]
+  },
+  {
+    "section_id": "sec-37",
+    "title": "Wednesday \u2014 Zionism, Palestinian Nationalism, and the British Mandate",
+    "questions": [
+      {
+        "question": "The Irgun and Lehi (Stern Gang) were Jewish terrorist groups; what was their primary target?",
+        "choices": [
+          "Military installations",
+          "Civilian population",
+          "British government buildings"
+        ],
+        "correct_index": 0
+      },
+      {
+        "question": "What happened during the Deir Yassin massacre?",
+        "choices": [
+          "It resulted in a British military response and an end to the violence.",
+          "The Irgun and Lehi were disbanded after this event.",
+          "A ceasefire agreement was signed between Israel and Palestine nationalists.",
+          "The massacre triggered widespread Palestinian support for Palestinian nationalism."
+        ],
+        "correct_index": 2
+      },
+      {
+        "question": "Who is responsible for comparing Palestinian fedayeen tactics with the birth of Israel in order to justify displacement?",
+        "choices": [
+          "Zionist historians",
+          "Israeli officials",
+          "Palestinian nationalists",
+          "British Mandate authorities"
+        ],
+        "correct_index": 1
+      }
+    ]
+  },
+  {
+    "section_id": "sec-38",
+    "title": "Friday \u2014 Mao, Marighella, and the Theory of Revolutionary Terror",
+    "questions": [
+      {
+        "question": "What is the primary argument in Frantz Fanon's *The Wretched of the Earth* that justifies violence against the colonizer as a means of restoring the colonized person's humanity?",
+        "choices": [
+          "A: Colonization leads to economic exploitation",
+          "B: The need for decolonization is urgent",
+          "C: Violence can be used to liberate oneself from colonial rule",
+          "D: The psychological wound suffered by colonized peoples requires violent liberation"
+        ],
+        "correct_index": 1
+      },
+      {
+        "question": "What does Sartre's preface in *The Wretched of the Earth* endorse regarding revolutionary violence?",
+        "choices": [
+          "A: It is necessary for achieving justice and equality",
+          "B: It promotes the dehumanization of oppressors",
+          "C: It leads to social and economic inequality",
+          "D: It justifies violent conflict between rival ideologies"
+        ],
+        "correct_index": 2
+      }
+    ]
+  },
+  {
+    "section_id": "sec-40",
+    "title": "Monday \u2014 The New Left and the 1960s\u201370s Terror Surge",
+    "questions": [
+      {
+        "question": "What was the term for student radicalization in the global 1968 moment?",
+        "choices": [
+          "A. Counterculture Revolution",
+          "B. Anti-War Movement",
+          "C. Marxist Revolution",
+          "D. Black Power"
+        ],
+        "correct_index": 0
+      },
+      {
+        "question": "Which group claimed responsibility for hijacking Lufthansa Flight 181 and demanded the release of imprisoned RAF leaders?",
+        "choices": [
+          "A. Red Army Faction (West Germany)",
+          "B. Baader-Meinhof Group / Red Army Faction",
+          "C. Japanese Red Army",
+          "D. Weathermen"
+        ],
+        "correct_index": 2
+      },
+      {
+        "question": "What was the turning point in West German counterterrorism when GSG 9 commandos stormed a hijacked plane?",
+        "choices": [
+          "A. The capture of the hijacker",
+          "B. The release of the hostages",
+          "C. The death of the hijacker",
+          "D. The capture of the RAF leader"
+        ],
+        "correct_index": 1
+      },
+      {
+        "question": "Which country did not experience a significant left-wing terrorist operation in this section, and what was it?",
+        "choices": [
+          "A. Japan",
+          "B. Italy",
+          "C. West Germany",
+          "D. Australia"
+        ],
+        "correct_index": 0
+      }
+    ]
+  },
+  {
+    "section_id": "sec-41",
+    "title": "Wednesday \u2014 Right-Wing Terrorism: Neo-Nazism, Militias, and Christian Identity",
+    "questions": [
+      {
+        "question": "According to historian Kathleen Belew's book, who was Robert Mathews leading in the early 1980s?\nA. A group of young men from a troubled community seeking revenge for their family's murders.\nB. A militia group preparing for an armed uprising against government control.\nC. The Knights Templar, resurrected as an underground neo-Nazi network.\nD. A cult leader promoting the teachings of Louis Beam.",
+        "choices": [
+          "A",
+          "B",
+          "C",
+          "D"
+        ],
+        "correct_index": 0
+      }
+    ]
+  },
+  {
+    "section_id": "sec-42",
+    "title": "Friday \u2014 State-Sponsored Terrorism During the Cold War",
+    "questions": [
+      {
+        "question": "Which organization received U.S. support for anti-communist insurgencies in Central America during the 1980s?",
+        "choices": [
+          "The Nicaraguan Contras",
+          "The Afghan Mujahideen",
+          "The Popular Front of Palestine",
+          "The South African National Liberation Army"
+        ],
+        "correct_index": 2
+      },
+      {
+        "question": "Which Libyan regime was accused of supporting terrorism, and for what reason?",
+        "choices": [
+          "Gaddafi's pan-Arab nationalism led to increased state accountability after the Lockerbie bombing.",
+          "Gaddafi's support for anti-communist insurgencies in Central America made him a target of U.S. policy change.",
+          "Gaddafi's regime was known for supporting Palestinian resistance, but this had no impact on U.S. actions during the Cold War.",
+          "Gaddafi's regime was accused of sponsoring terrorism without justification or provocation from Washington."
+        ],
+        "correct_index": 0
+      },
+      {
+        "question": "Which Pan-Arab nationalist movement led by a former PLO leader was supported by the CIA, and for what reason?",
+        "choices": [
+          "The Popular Front for the Liberation of Palestine",
+          "Fatah under Yasser Arafat's leadership",
+          "The Palestine Liberation Organization as an independent entity",
+          "Palestine Liberation Army"
+        ],
+        "correct_index": 0
+      }
+    ]
+  },
+  {
+    "section_id": "sec-45",
+    "title": "Wednesday \u2014 Hijacking and the Internationalization of Terror",
+    "questions": [
+      {
+        "question": "The first wave of aircraft hijackings (1968\u20131972) involved which group that was known for targeting military planes?",
+        "choices": [
+          "A. The Red Army Faction.",
+          "B. The Weather Underground.",
+          "C. The Symbionese Liberation Army.",
+          "D. The Black Panther Party."
+        ],
+        "correct_index": 0
+      },
+      {
+        "question": "What four simultaneous hijackings of aircraft took place in Dawson's Field in Jordan before international cameras?",
+        "choices": [
+          "A. Four US Air Force planes.",
+          "B. Four PanAm passenger jets.",
+          "C. Four Israeli military planes.",
+          "D. Four commercial flights."
+        ],
+        "correct_index": 0
+      },
+      {
+        "question": "What direct consequence of the international response to Dawson's Field came about during 'Black September'?",
+        "choices": [
+          "A. Jordan's economy was heavily impacted by international sanctions.",
+          "B. The US government responded with increased military aid to Israel.",
+          "C. Jordan and Israel signed a peace treaty, leading to relative stability in the region.",
+          "D. Israel launched a devastating campaign against Palestinian resistance."
+        ],
+        "correct_index": 1
+      }
+    ]
+  },
+  {
+    "section_id": "sec-46",
+    "title": "Friday \u2014 **Primary Source Analysis Paper** Due",
+    "questions": [
+      {
+        "question": "In analyzing the primary source selected by a student, what is considered essential when examining historical context?",
+        "choices": [
+          "A. The author's personal opinion or bias",
+          "B. The location where it was written and published",
+          "C. The intended audience of the text",
+          "D. The date the document was created"
+        ],
+        "correct_index": 2
+      },
+      {
+        "question": "What is one way to assess the ideological framework present in a primary source, according to the Course Reader?",
+        "choices": [
+          "A. By evaluating its tone and language usage",
+          "B. By comparing it to other sources on similar topics",
+          "C. By analyzing its influence on historical events",
+          "D. By looking at how it relates to broader social issues"
+        ],
+        "correct_index": 1
+      },
+      {
+        "question": "What should a student consider when determining the intended audience of their primary source analysis?",
+        "choices": [
+          "A. The author's age and occupation",
+          "B. The publication date, format, and language used",
+          "C. The historical time period in which it was written",
+          "D. The social class or economic status of its creator"
+        ],
+        "correct_index": 0
+      }
+    ]
+  },
+  {
+    "section_id": "sec-48",
+    "title": "Monday \u2014 Historical Roots of the Conflict (1169\u20131969)",
+    "questions": [
+      {
+        "question": "In what year did the English begin colonizing Ireland, and under what circumstances?",
+        "choices": [
+          "A: 1066",
+          "B: 1258",
+          "C: 1495",
+          "D: 1642"
+        ],
+        "correct_index": 0
+      },
+      {
+        "question": "Which event in 1921 partitioned Ireland into two new countries, leading to the formation of Northern Ireland?",
+        "choices": [
+          "A: The Easter Rising",
+          "B: The Treaty of Lisbon",
+          "C: The Acts of Union",
+          "D: Partition"
+        ],
+        "correct_index": 2
+      },
+      {
+        "question": "What significant movement in the 1960s highlighted ongoing discrimination and inequalities faced by Catholics, leading to violent protests?",
+        "choices": [
+          "A: The Red Army Faction",
+          "B: The Black Power Movement",
+          "C: The Civil Rights Movement",
+          "D: The White Power Movement"
+        ],
+        "correct_index": 2
+      }
+    ]
+  },
+  {
+    "section_id": "sec-50",
+    "title": "Friday \u2014 The Peace Process and Lessons of Negotiation",
+    "questions": [
+      {
+        "question": "During the 1981 hunger strikes, what was the primary goal of Sinn F\u00e9in leaders?\nA. To increase their negotiating power\nB. To gain political recognition from British government\nC. To force IRA to abandon violence\nD. To attract new recruits for armed struggle"
+      },
+      {
+        "question": "Which party transitioned from being a paramilitary group to participating in elections and forming the Northern Ireland Assembly?\nA. Continuity IRA\nB. Ulster Defence Association\nC. Sinn F\u00e9in\nD. Irish Republican Army"
+      },
+      {
+        "question": "What is one key lesson the Good Friday Agreement model has for conflict resolution across the globe?"
+      }
+    ]
+  },
+  {
+    "section_id": "sec-54",
+    "title": "Monday \u2014 Midterm Review Session",
+    "questions": [
+      {
+        "question": "What is a theoretical framework in the context of social and political thought?",
+        "choices": [
+          "A. A set of rules for logical reasoning.",
+          "B. A philosophical stance on human nature.",
+          "C. A method for analyzing complex systems.",
+          "D. A scientific theory explaining natural phenomena."
+        ],
+        "correct_index": 2
+      },
+      {
+        "question": "Which wave refers to the anti-colonial and Cold War movements in the Caribbean and Latin America?",
+        "choices": [
+          "A. Anarchist wave.",
+          "B. Socialist wave.",
+          "C. Independence movement wave.",
+          "D. Civil rights movement wave."
+        ],
+        "correct_index": 0
+      },
+      {
+        "question": "Which technological advancements were pivotal during the Troubles, such as sniper rifles and explosives?",
+        "choices": [
+          "A. Surveillance technology.",
+          "B. Advanced communication devices.",
+          "C. Improved tactics like IEDs.",
+          "D. Cybersecurity measures."
+        ],
+        "correct_index": 1
+      }
+    ]
+  },
+  {
+    "section_id": "sec-55",
+    "title": "Wednesday \u2014 IN-CLASS MIDTERM EXAM",
+    "questions": [
+      {
+        "question": "1. Compare the philosophical justifications for political violence offered by Fanon and Walzer.",
+        "choices": [
+          "A",
+          "B",
+          "C",
+          "D"
+        ],
+        "correct_index": 0
+      },
+      {
+        "question": "2. Trace the evolution of terrorism from the Anarchist Wave to the Cold War.",
+        "choices": [
+          "A",
+          "B",
+          "C",
+          "D"
+        ],
+        "correct_index": 1
+      },
+      {
+        "question": "3. Using the case study of Northern Ireland, analyze what conditions allow a terrorist movement to transition to peaceful politics.",
+        "choices": [
+          "A",
+          "B",
+          "C",
+          "D"
+        ],
+        "correct_index": 2
+      }
+    ]
+  },
+  {
+    "section_id": "sec-58",
+    "title": "Monday \u2014 Soviet-Afghan War and the Mujahideen (1979\u20131989)",
+    "questions": [
+      {
+        "question": "What was the primary ideological justification for the mujahedeen's resistance against the Soviet Union?",
+        "choices": [
+          "A. Nationalism",
+          "B. Communism",
+          "C. Democracy",
+          "D. Economic Sanctions"
+        ],
+        "correct_index": 0
+      },
+      {
+        "question": "Who were the 'Afghan Arabs' and what role did they play in shaping the jihadist movement?",
+        "choices": [
+          "A. Local Pashtun leaders",
+          "B. Saudi Arabian sheikhs and students",
+          "C. Uzbek warlords and regional commanders",
+          "D. Pakistani intelligence officers"
+        ],
+        "correct_index": 2
+      },
+      {
+        "question": "Who was Osama bin Laden's mentor in the jihadist movement, and what did he believe formed the basis of the mujahedeen's cause?",
+        "choices": [
+          "A. Abdullah Azzam",
+          "B. Ayman al-Zawahiri",
+          "C. Gulbuddin Hekmatyar",
+          "D. Mullah Omar"
+        ],
+        "correct_index": 0
+      }
+    ]
+  },
+  {
+    "section_id": "sec-60",
+    "title": "Friday \u2014 9/11: Planning, Execution, and Immediate Aftermath",
+    "questions": [
+      {
+        "question": "Who was the operational planner of 9/11?",
+        "choices": [
+          "Khalid Sheikh Mohammed",
+          "Usama bin Laden",
+          "Saddam Hussein",
+          "Osama Bin Laden"
+        ],
+        "correct_index": 0
+      },
+      {
+        "question": "In what country were the leaders of the Hamburg Cell based?",
+        "choices": [
+          "Germany",
+          "England",
+          "France",
+          "Iraq"
+        ],
+        "correct_index": 1
+      },
+      {
+        "question": "What was the timeline of events leading up to and including the day itself on September 11, 2001?",
+        "choices": [
+          "Hours",
+          "Minutes",
+          "Days",
+          "Weeks"
+        ],
+        "correct_index": 3
+      },
+      {
+        "question": "How did Al-Qaeda's strategic goals change in response to the attacks by American forces and coalition partners? *(Course Reader)*",
+        "choices": [
+          "Shift towards regional conflicts",
+          "Increase in terrorist operations worldwide",
+          "Redefine global jihadist strategy",
+          "Maintain focus on attacking Western targets"
+        ],
+        "correct_index": 1
+      }
+    ]
+  },
+  {
+    "section_id": "sec-62",
+    "title": "Monday \u2014 Afghanistan, Iraq, and the Limits of Military Counterterrorism",
+    "questions": [
+      {
+        "question": "What was the primary goal of Operation Enduring Freedom when it began in 2001?",
+        "choices": [
+          "D. Decentralization after the fall of Saddam Hussein"
+        ],
+        "correct_index": 0
+      },
+      {
+        "question": "Which organization, founded by Osama bin Laden, continued to conduct attacks after the invasion of Afghanistan in 2001?",
+        "choices": [
+          "B. Al Qaeda"
+        ],
+        "correct_index": 0
+      },
+      {
+        "question": "What does the acronym 'Iraq War decision' refer to, and what was its alleged justification for invading Iraq?",
+        "choices": [
+          "A. Saddam Hussein's WMD program",
+          "B. The Sunni awakening movement",
+          "C. Ousting the Taliban in Afghanistan",
+          "D. Al-Qaeda attacks on US soil"
+        ],
+        "correct_index": 2
+      }
+    ]
+  },
+  {
+    "section_id": "sec-63",
+    "title": "Wednesday \u2014 Drone Warfare, Targeted Killing, and the Ethics of Remote War",
+    "questions": [
+      {
+        "question": "What was the first non-reconnaissance platform to be armed with Hellfire missiles?",
+        "choices": [
+          "A: MQ-4C Triton",
+          "B: RQ-4 Global Hawk",
+          "C: MQ-5 Bumblebee",
+          "D: MQ-9 Reaper"
+        ],
+        "correct_index": 2
+      },
+      {
+        "question": "Who is credited with raising unprecedented legal and ethical questions about sovereignty, due process, and proportionality in the context of drone warfare?",
+        "choices": [
+          "A: Barack Obama",
+          "B: Robert Gates",
+          "C: John Brennan",
+          "D: Michael Hayden"
+        ],
+        "correct_index": 1
+      },
+      {
+        "question": "What percentage of strikes were conducted by CIA's drone program outside military chain of command, leading to unprecedented questions about sovereignty, due process, and proportionality?",
+        "choices": [
+          "A: 0.5%",
+          "B: 2.7%",
+          "C: 6.4%",
+          "D: 10.3%"
+        ],
+        "correct_index": 2
+      }
+    ]
+  },
+  {
+    "section_id": "sec-64",
+    "title": "Friday \u2014 ISIS: The Caliphate as Terrorist State",
+    "questions": [
+      {
+        "question": "What is the name of the AQI leader who founded ISIS, and what innovation allowed for the creation of a terrorist state within three years?",
+        "choices": [
+          "A. Osama Bin Laden",
+          "B. Abu Bakr al-Baghdadi",
+          "C. Al Qaeda in Iraq",
+          "D. Zawahiri"
+        ],
+        "correct_index": 0
+      },
+      {
+        "question": "Who declared the Caliphate, leading to its proclamation by al-Baghdadi and a subsequent declaration of war against the Islamic State?",
+        "choices": [
+          "A. Abu Musab al-Zarqawi",
+          "B. Osama Bin Laden",
+          "C. Al Qaeda in Iraq",
+          "D. Ayman al-Zawahiri"
+        ],
+        "correct_index": 1
+      },
+      {
+        "question": "What are two aspects of ISIS's dual nature as terrorist organization and functioning proto-state?",
+        "choices": [
+          "A. Terrorism and governance, media and propaganda",
+          "B. Governance and terrorism, recruitment and extremism",
+          "C. Media control and ideological indoctrination",
+          "D. Extremist ideology and territorial conquest"
+        ],
+        "correct_index": 2
+      }
+    ]
+  },
+  {
+    "section_id": "sec-67",
+    "title": "Wednesday \u2014 Aum Shinrikyo and Apocalyptic/Doomsday Terrorism",
+    "questions": [
+      {
+        "question": "What is the name of the cult behind the 1995 Tokyo subway attack?",
+        "choices": [
+          "A. Raelians",
+          "B. Scientologists",
+          "C. Aum Shinrikyo",
+          "D. ISIS"
+        ],
+        "correct_index": 0
+      },
+      {
+        "question": "How many people were killed in the 1995 Tokyo subway attack?",
+        "choices": [
+          "A. 0",
+          "B. 8",
+          "C. 200",
+          "D. 1,000"
+        ],
+        "correct_index": 1
+      },
+      {
+        "question": "Which topic focuses on cult psychology and organizational dynamics within apocalyptic groups?",
+        "choices": [
+          "A. Terrorism",
+          "B. Nuclear Weapons",
+          "C. Chemical Agents",
+          "D. Suicide Bombing"
+        ],
+        "correct_index": 2
+      }
+    ]
+  },
+  {
+    "section_id": "sec-72",
+    "title": "Monday \u2014 The Evolution of Terrorist Technology: A Historical Overview",
+    "questions": [
+      {
+        "question": "Which 19th-century technology enabled widespread democratization?",
+        "choices": [
+          "A",
+          "B",
+          "C",
+          "D"
+        ],
+        "correct_index": 0
+      },
+      {
+        "question": "What did Alfred Nobel's legacy as a philanthropist include, in addition to his work on explosives?",
+        "choices": [
+          "A",
+          "B",
+          "C",
+          "D"
+        ],
+        "correct_index": 1
+      },
+      {
+        "question": "In which region did the first car bombs emerge, and what was their purpose?",
+        "choices": [
+          "A",
+          "B",
+          "C",
+          "D"
+        ],
+        "correct_index": 2
+      }
+    ]
+  },
+  {
+    "section_id": "sec-73",
+    "title": "Wednesday \u2014 Cyberterrorism and Information Warfare",
+    "questions": [
+      {
+        "question": "Which country likely deployed the first major state-level cyber assault in 2007?",
+        "choices": [
+          "A: United States",
+          "B: Russia",
+          "C: Israel",
+          "D: Estonia"
+        ],
+        "correct_index": 1
+      },
+      {
+        "question": "The term 'cyberterrorism' was first coined to describe what type of attack?",
+        "choices": [
+          "A: Cybercrime",
+          "B: Physical destruction",
+          "C: State-sponsored cyberwarfare",
+          "D: Data breaches"
+        ],
+        "correct_index": 0
+      },
+      {
+        "question": "Which group is often referred to as the 'Cyber Caliphate' due to their attacks on Western targets and dissemination of Islamic teachings online?",
+        "choices": [
+          "A: ISIS",
+          "B: Al Qaeda",
+          "C: Anonymous",
+          "D: Red Army"
+        ],
+        "correct_index": 0
+      }
+    ]
+  },
+  {
+    "section_id": "sec-75",
+    "title": "Friday \u2014 Bioterrorism: History, Threat Assessment, and Prevention",
+    "questions": [
+      {
+        "question": "Which of the following is NOT a historical example of biological warfare in East Asia?\nA) The Mongol Empire's use of plague-ridden catapulted corpses to spread disease during the 13th century\nB) Unit 731's experiments on humans at the behest of Imperial Japan\nC) A 1948 attack by North Korea on South Korea with anthrax spores\nD) The 2005 outbreak of avian flu in China"
+      },
+      {
+        "question": "What is the connection between the Rajneeshee salmonella attack and Unit 731?\nA) Both were state-sponsored biological warfare programs\nB) Both used similar pathogens for bioterrorism\nC) Both targeted a U.S.-backed government\nD) Both had links to the U.S. military"
+      },
+      {
+        "question": "In what year was the 2001 anthrax letters (Amerithrax) attack, and who claimed responsibility?\nA) 2001: David Leigh and Jim Acosta\nB) 2007: Army lab scientist Bruce Ivins\nC) 2005: Former Soviet scientist Ken Alibek\nD) 1984: Rajneeshees attacking Rajneesh temple"
+      },
+      {
+        "question": "Which of the following is NOT a consequence of research advancing dual-use biology?\nA) Development of vaccines to prevent biological warfare\nB) Increased risk of unintended release of pathogens in biolabs\nC) Wider availability of pathogen strains for agricultural use\nD) Greater awareness about the ethics and limitations of biotechnology"
+      }
+    ]
+  },
+  {
+    "section_id": "sec-78",
+    "title": "Wednesday \u2014 Counterterrorism Strategy: What Works?",
+    "questions": [
+      {
+        "question": "Which method of counterterrorism was used most in the RAND study (Jones & Libicki, 2008)?",
+        "choices": [
+          "A. Military force alone"
+        ],
+        "correct_index": 0
+      },
+      {
+        "question": "What percentage of terrorist groups ended through military means as per the RAND study?",
+        "choices": [
+          "A. 7%"
+        ],
+        "correct_index": 1
+      },
+      {
+        "question": "Which method was used by only 7% of terrorist groups according to the RAND study?",
+        "choices": [
+          "A. Military force alone"
+        ],
+        "correct_index": 0
+      }
+    ]
+  },
+  {
+    "section_id": "sec-79",
+    "title": "Friday \u2014 The Future of Terrorism: AI, Drones, and Unknown Threats",
+    "questions": [
+      {
+        "question": "What topic discusses the use of AI to develop synthetic pathogens for bioterrorism?",
+        "choices": [
+          "A. Artificial intelligence and cybersecurity",
+          "B. Machine learning and deepfakes",
+          "C. Quantum computing and cryptography",
+          "D. Autonomous vehicles and drones"
+        ],
+        "correct_index": 1
+      },
+      {
+        "question": "What scenario involves a lone actor using AI-designed synthetic pathogen to release it in a subway system?",
+        "choices": [
+          "A. Scenario A: Lone actor with AI-designated synthetic pathogen releases it in a subway system",
+          "B. Scenario B: Nation-state uses proxies and deepfakes to trigger ethnic violence in a rival country without attribution",
+          "C. Scenario C: Decentralized far-right accelerationist network coordinates simultaneous attacks across 12 cities using encrypted apps and 3D-printed weapons",
+          "D. Scenario D: Autonomous weapon systems designed for swarm warfare"
+        ],
+        "correct_index": 0
+      },
+      {
+        "question": "What topic discusses the use of consumer drones in terrorist activities such as attacks by ISIS or the Houthis?",
+        "choices": [
+          "A. AI-enabled terrorism: deepfakes, autonomous weapons, persuasion AI",
+          "B. Synthetic biology and the democratization of WMD production",
+          "C. Quantum computing and the end of encrypted communications",
+          "D. Space, infrastructure, and emerging domains of attack"
+        ],
+        "correct_index": 0
+      }
+    ]
+  },
+  {
+    "section_id": "sec-81",
+    "title": "Take-Home Final Examination",
+    "questions": [
+      {
+        "question": "Question 1:",
+        "choices": [
+          "A.",
+          "B.",
+          "C.",
+          "D."
+        ],
+        "correct_index": 0
+      },
+      {
+        "question": "Question 2:",
+        "choices": [
+          "A.",
+          "B.",
+          "C.",
+          "D."
+        ],
+        "correct_index": 1
+      },
+      {
+        "question": "Question 3:",
+        "choices": [
+          "A.",
+          "B.",
+          "C.",
+          "D."
+        ],
+        "correct_index": 2
+      },
+      {
+        "question": "Question 4:",
+        "choices": [
+          "A.",
+          "B.",
+          "C.",
+          "D."
+        ],
+        "correct_index": 0
+      },
+      {
+        "question": "Question 5:",
+        "choices": [
+          "A.",
+          "B.",
+          "C.",
+          "D."
+        ],
+        "correct_index": 1
+      }
+    ]
+  },
+  {
+    "section_id": "sec-85",
+    "title": "Appendix B: Academic Resources",
+    "questions": [
+      {
+        "question": "Which of these research institutions is part of a national consortium and also offers training for individuals interested in terrorism studies?",
+        "choices": [
+          "START Center (National Consortium for the Study of Terrorism)",
+          "RAND Corporation Homeland Security division",
+          "Combating Terrorism Center at West Point (CTC Sentinel)",
+          "International Centre for the Study of Radicalisation (ICSR)",
+          "SITE Intelligence Group"
+        ],
+        "correct_index": 0
+      },
+      {
+        "question": "Which database provides access to over 85,000 terrorist attacks from 1970 onwards, allowing researchers to analyze trends and patterns in terrorism?",
+        "choices": [
+          "Global Terrorism Database (GTD)",
+          "RAND Terrorism Incident Database",
+          "Profiles of Individual Radicalization in the United States (PIRUS)",
+          "Combating Terrorism Center at West Point (CTC Sentinel)",
+          "SITE Intelligence Group"
+        ],
+        "correct_index": 1
+      }
+    ]
+  },
+  {
+    "section_id": "sec-86",
+    "title": "Appendix C: Course Calendar Summary",
+    "questions": [
+      {
+        "question": "What topic is covered in week 4?",
+        "choices": [
+          "A",
+          "B",
+          "C",
+          "D"
+        ],
+        "correct_index": 2
+      },
+      {
+        "question": "When is the Midterm Exam scheduled?",
+        "choices": [
+          "A",
+          "B",
+          "C",
+          "D"
+        ],
+        "correct_index": 1
+      }
+    ]
+  },
+  {
+    "section_id": "sec-87",
+    "title": "Appendix D: A Note on Objectivity and Analytical Distance",
+    "questions": [
+      {
+        "question": "Which of the following describes why understanding terrorism is essential for dismantling it?",
+        "choices": [
+          "A. Ignoring it will prevent future attacks.",
+          "B. It validates political violence.",
+          "C. Understanding its logic makes it understandable, not excusable.",
+          "D. Comprehending its reasoning does not excuse violent actions."
+        ],
+        "correct_index": 2
+      }
+    ]
+  }
+]
