@@ -1,0 +1,11 @@
+test,description,statistic,p_value,n_models,n_dimensions
+bartlett,Homogeneity of variance (7 Likert scores per model as samples),2.303647798017932,0.1290705606462879,2,7
+ttest_paired,Paired t-test on 7 dimensions: gemma3:4b vs smollm2:1.7b,3.333333333333333,0.015741410423123475,2,7
+pairwise_overall_score_diff,gemma3:4b minus smollm2:1.7b,1.42,,,
+range_across_models,accuracy max minus min,0.0,,2,
+range_across_models,formality max minus min,0.0,,2,
+range_across_models,faithfulness max minus min,2.0,,2,
+range_across_models,clarity max minus min,2.0,,2,
+range_across_models,succinctness max minus min,1.0,,2,
+range_across_models,relevance max minus min,2.0,,2,
+range_across_models,numeric_consistency max minus min,3.0,,2,

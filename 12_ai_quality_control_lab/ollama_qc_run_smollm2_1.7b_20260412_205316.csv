@@ -1,0 +1,2 @@
+model,error,raw_json_chars,accurate,accuracy,formality,faithfulness,clarity,succinctness,relevance,details,numeric_consistency,issues,evidence_notes,overall_score,run_id
+smollm2:1.7b,,250,True,5,4,3,3,3,3,0-80 words,2,criterion: note,short,3.29,20260412_205316

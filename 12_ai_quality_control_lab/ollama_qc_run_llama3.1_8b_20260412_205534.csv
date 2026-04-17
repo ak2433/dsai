@@ -1,0 +1,4 @@
+model,error,run_id
+llama3.1:8b,"Ollama failed:
+generate HTTP 500: {""error"":""llama runner process has terminated: %!w(\u003cnil\u003e)""}
+chat HTTP 500: {""error"":""llama runner process has terminated: %!w(\u003cnil\u003e)""}",20260412_205534
