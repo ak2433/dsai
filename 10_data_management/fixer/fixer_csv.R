@@ -57,7 +57,7 @@ cat("   ✅ .env read from fixer folder.\n\n")
 
 OLLAMA_HOST = Sys.getenv("OLLAMA_HOST", unset = "https://ollama.com")
 OLLAMA_API_KEY = Sys.getenv("OLLAMA_API_KEY", unset = "")
-OLLAMA_MODEL = Sys.getenv("OLLAMA_MODEL", unset = "nemotron-3-nano:30b-cloud")
+OLLAMA_MODEL = Sys.getenv("OLLAMA_MODEL", unset = "smollm2:1.7b")
 cat("☁️  Ollama: host = ", OLLAMA_HOST, "\n", sep = "")
 cat("   model  = ", OLLAMA_MODEL, "\n", sep = "")
 ak_show = if (nzchar(OLLAMA_API_KEY)) {

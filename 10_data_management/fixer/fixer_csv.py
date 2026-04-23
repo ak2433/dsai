@@ -55,7 +55,7 @@ print("   ✅ .env read from fixer folder.\n")
 
 OLLAMA_HOST = os.environ.get("OLLAMA_HOST", "https://ollama.com").strip()
 OLLAMA_API_KEY = os.environ.get("OLLAMA_API_KEY", "").strip()
-OLLAMA_MODEL = os.environ.get("OLLAMA_MODEL", "nemotron-3-nano:30b-cloud").strip()
+OLLAMA_MODEL = os.environ.get("OLLAMA_MODEL", "smollm2:1.7b").strip()
 print(f"☁️  Ollama: host = {OLLAMA_HOST}")
 print(f"   model  = {OLLAMA_MODEL}")
 if OLLAMA_API_KEY:

@@ -26,7 +26,7 @@
 - Copy [`.env.example`](.env.example) → `.env` and set **`OLLAMA_API_KEY`**. Defaults target **Ollama Cloud** (`OLLAMA_HOST=https://ollama.com`, `OLLAMA_MODEL=nemotron-3-nano:30b-cloud`). Confirm the exact cloud tag in the [Ollama model library](https://ollama.com/library) if your key rejects a name.
 - Optional: set **`SERPER_API_KEY`** for live search (see [Serper](https://serper.dev)). Preflight and the **`web_search`** tool use [CrewAI](https://docs.crewai.com/) **`SerperDevTool`** (`pip` installs **`crewai[tools]`**—heavier than `httpx` alone). Without a key, preflight and the tool return a “search disabled” message; **`AGENT.md`** instructs the model not to invent URLs.
 - `pip install -r` [`requirements.txt`](requirements.txt)
-- From this folder: `python -m uvicorn app.api:app --host 0.0.0.0 --port 8000`, or **`./runme.sh`**.
+- From this folder: `python -m uvicorn app.api:app --host 0.0.0.0 --port 8000`, or **`./runme.sh`** (macOS/Linux), or **`.\runme.ps1`** (Windows PowerShell).
 - `GET http://127.0.0.1:8000/health` → should report `"ok": true` plus **`max_autonomous_turns`**, **`min_completion_turns`**, and related fields.
 - Optional: watch turn-by-turn activity in **`logs/agent.log`** (default when **`AGENT_LOG_FILE`** is unset; see [Guardrails](#guardrails)).
 - `POST http://127.0.0.1:8000/hooks/agent` with JSON `{"task": "Disaster snapshot or follow-up (incident, area, time window)"}` (no auth header).
@@ -40,6 +40,7 @@ Same idea as [`08_function_calling/mcp_fastapi/`](../../08_function_calling/mcp_
 | Script | What it does |
 |--------|----------------|
 | [`runme.sh`](runme.sh) | `cd` to this folder and run **`python -m uvicorn app.api:app`** on port **8000** |
+| [`runme.ps1`](runme.ps1) | Same as **`runme.sh`** for **Windows PowerShell** |
 | [`testme.py`](testme.py) | After deploy: **`GET /health`** and **`POST /hooks/agent`** against **`AGENT_PUBLIC_URL`** in **`.env`** |
 | [`manifestme.sh`](manifestme.sh) | **`rsconnect write-manifest fastapi`** with **`--entrypoint app.api:app`** |
 | [`deployme.sh`](deployme.sh) | **`rsconnect deploy fastapi`** using **`CONNECT_SERVER`** and **`CONNECT_API_KEY`** from **`.env`** |

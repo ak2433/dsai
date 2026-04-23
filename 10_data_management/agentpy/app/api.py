@@ -252,10 +252,14 @@ AgentBodyDep = Annotated[
 @app.get("/health", tags=["health"], summary="Health check")
 async def health() -> dict[str, Any]:
     """Returns `ok`, whether new agent runs are allowed, Ollama model name, and max autonomous turn cap."""
+    serper_set = bool((os.getenv("SERPER_API_KEY") or "").strip())
+    ollama_key_set = bool((os.getenv("OLLAMA_API_KEY") or "").strip())
     return {
         "ok": True,
         "run_enabled": app.state.run_enabled,
         "model": OLLAMA_MODEL,
+        "ollama_api_key_configured": ollama_key_set,
+        "serper_api_key_configured": serper_set,
         "max_autonomous_turns": MAX_AUTONOMOUS_TURNS,
         "min_completion_turns": min_completion_turns(),
     }
