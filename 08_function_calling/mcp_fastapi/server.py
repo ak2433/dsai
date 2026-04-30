@@ -42,7 +42,32 @@ TOOLS = [
             },
             "required": ["dataset_name"],
         },
-    }
+    },
+    {
+        "name": "filter_dataset_rows",
+        "description": (
+            "Return rows where a column equals a value (string comparison after coercing cells to text). "
+            "Useful for iris Species or mtcars cyl (e.g. value '4')."
+        ),
+        "inputSchema": {
+            "type": "object",
+            "properties": {
+                "dataset_name": {
+                    "type": "string",
+                    "description": "Dataset name: 'mtcars' or 'iris'.",
+                },
+                "column_name": {
+                    "type": "string",
+                    "description": "Column to filter on (e.g. 'Species' for iris, 'cyl' for mtcars).",
+                },
+                "value": {
+                    "type": "string",
+                    "description": "Value to match (e.g. 'setosa', or '4' for 4-cylinder cars).",
+                },
+            },
+            "required": ["dataset_name", "column_name", "value"],
+        },
+    },
 ]
 
 # ── Tool logic (same datasets as R: mtcars, iris via Rdatasets CSV) ──
@@ -65,6 +90,22 @@ def run_tool(name: str, args: dict) -> str:
         summary.index.name = "variable"
         summary.columns = ["mean", "sd", "min", "max"]
         return summary.reset_index().to_json(orient="records", indent=2)
+
+    if name == "filter_dataset_rows":
+        nm = args.get("dataset_name")
+        col = args.get("column_name")
+        val = args.get("value")
+        if nm not in DATASETS:
+            raise ValueError(f"Unknown dataset: '{nm}' — choose 'mtcars' or 'iris'")
+        df = DATASETS[nm]
+        if col not in df.columns:
+            raise ValueError(f"Unknown column: '{col}' — columns: {list(df.columns)}")
+
+        mask = df[col].astype(str) == str(val)
+        out = df.loc[mask]
+        # Cap rows so responses stay small over HTTP
+        out = out.head(200)
+        return out.to_json(orient="records", indent=2)
 
     raise ValueError(f"Unknown tool: {name}")
 

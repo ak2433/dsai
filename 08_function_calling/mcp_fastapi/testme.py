@@ -43,17 +43,19 @@ load_dotenv()
 # _ = runpy.run_path(ollama_script_path)
 
 # 0.4 Set the server URL #################################
-# Set the server URL
-# You can use your local API (if you execut runme.py)
-# SERVER = "http://127.0.0.1:8000/mcp"
-# Or you can use my deployed API (or update to yours), assuming you provide a Posit Connect viewer API key.
-SERVER = "https://connect.systems-apps.com/fastapimcp/mcp"
+# Local (Stage 1–2): run `python runme.py` or uvicorn from mcp_fastapi/, then use default below.
+# Deployed (Stage 4): set MCP_SERVER_URL and CONNECT_API_KEY in .env
+SERVER = os.environ.get("MCP_SERVER_URL", "http://127.0.0.1:8000/mcp")
 
 # ── Helper: send one JSON-RPC request ───────────────────────
 
 def mcp_request(method, params=None, id=1):
     body = {"jsonrpc": "2.0", "id": id, "method": method, "params": params or {}}
-    resp = requests.post(SERVER, json=body, headers={"Authorization": f"Key {os.getenv('CONNECT_API_KEY')}"})
+    headers = {}
+    api_key = os.getenv("CONNECT_API_KEY")
+    if api_key:
+        headers["Authorization"] = f"Key {api_key}"
+    resp = requests.post(SERVER, json=body, headers=headers)
     resp.raise_for_status()
     return resp.json().get("result")
 
@@ -89,6 +91,23 @@ result = mcp_request("tools/call", {
 })
 
 print(result["content"][0]["text"])
+
+# 3b. CALL SECOND TOOL — filter_dataset_rows #################################
+print("# 3b. CALL SECOND TOOL — filter_dataset_rows ############################")
+
+result_filter = mcp_request(
+    "tools/call",
+    {
+        "name": "filter_dataset_rows",
+        "arguments": {
+            "dataset_name": "iris",
+            "column_name": "Species",
+            "value": "setosa",
+        },
+    },
+    id=2,
+)
+print(result_filter["content"][0]["text"])
 
 
 # 4. CONNECT AN LLM TO THE MCP SERVER ####################
@@ -142,7 +161,7 @@ ollama_tools = [mcp_to_ollama(t) for t in tools_raw]
 
 if not ollama_is_running():
     print(
-        f"Skipping steps 4c–4d: no Ollama API at {OLLAMA_BASE} (connection refused or timeout).\n"
+        f"Skipping steps 4c–4e: no Ollama API at {OLLAMA_BASE} (connection refused or timeout).\n"
         "Start Ollama, then run this script again — or set OLLAMA_HOST if Ollama runs elsewhere."
     )
 else:
@@ -172,3 +191,31 @@ else:
         print(mcp_result["content"][0]["text"])
     else:
         print("No tool_calls in the model response — try another model or prompt.")
+
+    # 4e. Natural-language prompt that should pick the filter tool
+    print("# 4e. LLM SHOULD CHOOSE filter_dataset_rows ####################")
+    messages2 = [
+        {
+            "role": "user",
+            "content": (
+                "Using the MCP tools, return the iris rows where Species equals setosa. "
+                "Call the appropriate tool with dataset_name iris, column_name Species, value setosa."
+            ),
+        }
+    ]
+    body2 = {"model": MODEL, "messages": messages2, "tools": ollama_tools, "stream": False}
+    resp2 = requests.post(CHAT_URL, json=body2)
+    resp2.raise_for_status()
+    result_llm2 = resp2.json()
+    tool_calls2 = result_llm2.get("message", {}).get("tool_calls", [])
+    if tool_calls2:
+        tc2 = tool_calls2[0]
+        fn2 = tc2["function"]["name"]
+        ra2 = tc2["function"]["arguments"]
+        fa2 = json.loads(ra2) if isinstance(ra2, str) else ra2
+        mcp_result2 = mcp_request("tools/call", {"name": fn2, "arguments": fa2}, id=3)
+        print(f"LLM chose tool: {fn2}")
+        out_text = mcp_result2["content"][0]["text"]
+        print(out_text[:500] + ("..." if len(out_text) > 500 else ""))
+    else:
+        print("No tool_calls for filter prompt — try a larger model or repeat the tool names in the prompt.")

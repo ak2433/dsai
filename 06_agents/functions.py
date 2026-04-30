@@ -12,10 +12,11 @@
 import requests  # for HTTP requests
 import json      # for working with JSON
 import pandas as pd  # for data manipulation
-from datetime import datetime  # for date parsing
+import numpy as np  # for numerical operations
+from datetime import datetime, timedelta  # for date parsing
 
 # If you haven't already, install these packages...
-# pip install requests pandas
+# pip install requests pandas yfinance numpy tabulate
 
 ## 0.2 Configuration #################################
 
@@ -214,5 +215,115 @@ def get_shortages(category="Psychiatry", limit=500):
     # Parse dates (FDA API uses M/D/YYYY format)
     if not df.empty and "update_date" in df.columns:
         df["update_date"] = pd.to_datetime(df["update_date"], format="%m/%d/%Y", errors="coerce")
+    
+    return df
+
+
+# 4. PORTFOLIO METRICS FUNCTION ###################################
+
+def compute_portfolio_metrics(equities, period_years=3, risk_free_rate=0.04):
+    """
+    Fetch equity data from Yahoo Finance and compute modern portfolio theory metrics.
+    Calculates risk (volatility), Sharpe ratio, and Sortino ratio for each equity
+    and for an equal-weight portfolio.
+    
+    Parameters:
+    -----------
+    equities : list
+        List of equity ticker symbols (e.g., ["AAPL", "MSFT", "GOOGL"])
+    period_years : int
+        Number of years of historical data to use (default: 3)
+    risk_free_rate : float
+        Annual risk-free rate for Sharpe/Sortino (default: 0.04 = 4%)
+    
+    Returns:
+    --------
+    pandas.DataFrame
+        DataFrame with columns: ticker, annual_return, volatility, sharpe_ratio, sortino_ratio
+        Plus portfolio-level summary row
+    """
+    import yfinance as yf
+    
+    # Define date range
+    end_date = datetime.now()
+    start_date = end_date - timedelta(days=period_years * 365)
+    
+    # Download adjusted close prices from Yahoo Finance
+    # group_by='ticker' gives columns (TICKER, Open/High/Low/Close) for easier extraction
+    data = yf.download(equities, start=start_date, end=end_date, progress=False, auto_adjust=True, group_by="ticker")
+    
+    # Handle single ticker vs multiple tickers (yfinance returns different structures)
+    if isinstance(data.columns, pd.MultiIndex):
+        # MultiIndex columns: (Ticker, OHLC) - extract Close for each ticker
+        tickers_found = [t for t in equities if t in data.columns.get_level_values(0)]
+        prices = pd.DataFrame({t: data[t]["Close"] for t in tickers_found})
+    else:
+        # Single ticker: flat columns (Open, High, Low, Close, ...)
+        prices = data["Close"].to_frame() if isinstance(data["Close"], pd.Series) else data[["Close"]]
+        prices.columns = equities[:1]
+    
+    # Drop rows with missing values
+    prices = prices.dropna(how="all").ffill().bfill()
+    
+    # Calculate daily returns
+    returns = prices.pct_change().dropna()
+    
+    # Annualization factor (252 trading days per year)
+    ann_factor = np.sqrt(252)
+    
+    results = []
+    
+    for ticker in returns.columns:
+        ret = returns[ticker].dropna()
+        if len(ret) < 10:
+            continue
+        
+        mean_daily = ret.mean()
+        std_daily = ret.std()
+        annual_return = mean_daily * 252
+        volatility = std_daily * ann_factor
+        
+        # Sharpe ratio: (return - risk_free) / volatility
+        sharpe = (annual_return - risk_free_rate) / volatility if volatility > 0 else np.nan
+        
+        # Sortino ratio: uses downside deviation (only negative returns)
+        downside_returns = ret[ret < 0]
+        downside_std = downside_returns.std() * ann_factor if len(downside_returns) > 0 else np.nan
+        sortino = (annual_return - risk_free_rate) / downside_std if downside_std and downside_std > 0 else np.nan
+        
+        results.append({
+            "ticker": ticker,
+            "annual_return": annual_return,
+            "volatility": volatility,
+            "sharpe_ratio": sharpe,
+            "sortino_ratio": sortino
+        })
+    
+    df = pd.DataFrame(results)
+    
+    # Add equal-weight portfolio metrics
+    if len(returns.columns) > 1:
+        weights = np.ones(len(returns.columns)) / len(returns.columns)
+        port_returns = (returns * weights).sum(axis=1)
+    else:
+        port_returns = returns.iloc[:, 0]
+    
+    mean_daily = port_returns.mean()
+    std_daily = port_returns.std()
+    annual_return = mean_daily * 252
+    volatility = std_daily * ann_factor
+    sharpe = (annual_return - risk_free_rate) / volatility if volatility > 0 else np.nan
+    downside_returns = port_returns[port_returns < 0]
+    downside_std = downside_returns.std() * ann_factor if len(downside_returns) > 0 else np.nan
+    sortino = (annual_return - risk_free_rate) / downside_std if downside_std and downside_std > 0 else np.nan
+    
+    port_row = pd.DataFrame([{
+        "ticker": "PORTFOLIO (equal-weight)",
+        "annual_return": annual_return,
+        "volatility": volatility,
+        "sharpe_ratio": sharpe,
+        "sortino_ratio": sortino
+    }])
+    df = pd.concat([df, port_row], ignore_index=True)
     
     return df

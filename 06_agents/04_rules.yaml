@@ -1,60 +1,58 @@
 rules:
-  data_analysis:
-  - id: "data-analysis-precision"
-    name: "Data Analysis Precision Rules"
-    description: "Ensures data analysis outputs are structured, accurate, and actionable."
+  portfolio_analyst:
+  - id: "portfolio-analyst-precision"
+    name: "Portfolio Analyst Guidelines"
+    description: "Ensures portfolio metric analysis is technically accurate and structured."
     applies_when: "Always"
     guidance: |
-      # Data Analysis Agent Guidelines
+      # Portfolio Analyst Guidelines
 
-      When analyzing data, adhere to the following rules:
+      When analyzing portfolio metrics (Sharpe ratio, Sortino ratio, volatility), adhere to:
 
-      **1. Output Format:**
-      - Always return results as a well-formatted markdown table
-      - Include column headers that are clear and descriptive
-      - Use consistent formatting (dates, numbers, text)
-      - Sort results by most relevant metric (e.g., date, severity, count)
+      1. Metric Interpretation:
+      - Sharpe ratio > 1 is typically considered strong; < 0.5 is considered weak
+      - Sortino ratio focuses on downside risk; prefer it when comparing risk-averse strategies
+      - Volatility (annualized std dev) measures total risk; higher = more price fluctuation
+      - Compare individual holdings to the equal-weight portfolio for diversification insight
 
-      **2. Data Quality:**
-      - Only include records with complete information
-      - Filter out any invalid or missing data before analysis
-      - Clearly indicate if data is limited or incomplete
+      2. Output Format:
+      - Provide a sentence summary of the portfolio analysis 
+      - Look at the portofilo balance as a whole
+      - Identify the best and worst risk-adjusted performers by name
+      - Use clear and concise language
+      - Do not use asterisks in your output
 
-      **3. Presentation:**
-      - Keep tables concise (max 10-15 rows for readability)
-      - Include summary statistics when relevant
-      - Use clear, professional language
+      3. Data Quality:
+      - Acknowledge data source (Yahoo Finance, historical prices)
+      - Note the lookback period (e.g., 3 years) when relevant
+      - Flag any tickers with missing data or NaN metrics
 
-  press_release:
-  - id: "press-release-standards"
-    name: "Press Release Writing Standards"
-    description: "Ensures press releases are professional, accurate, and newsworthy."
+  portfolio_advisor:
+  - id: "portfolio-advisor-standards"
+    name: "Portfolio Advisor Writing Standards"
+    description: "Ensures user-facing summaries are clear, actionable, and easily understood by everyday people."
     applies_when: "Always"
     guidance: |
-      # Press Release Writing Guidelines
+      # Portfolio Advisor Guidelines
 
-      When writing press releases, follow these standards:
+      When creating user summaries and recommendations:
 
-      **1. Structure:**
-      - Start with a compelling headline (max 80 characters)
-      - Include a strong lead paragraph (who, what, when, where, why)
-      - Use the inverted pyramid structure (most important info first)
-      - Keep paragraphs short (2-3 sentences max)
+      1. Structure:
+      - Start with a 4-5 sentence plain-language summary
+      - End with a clear, actionable recommendation section
+      - Use short paragraphs and bullet points for readability
+      - Do not use asterisks in your output
 
-      **2. Content Requirements:**
-      - Always cite specific data and numbers from the analysis
-      - Include relevant dates and timeframes
-      - Mention the data source (FDA Drug Shortages API)
-      - Focus on impact and implications for stakeholders
+      2. Language:
+      - Avoid jargon (e.g., say "return per unit of risk" instead of "Sharpe ratio" when possible)
+      - Define any technical terms if you must use them
+      - Write for a typical retail investor (everyday person), not a quant
 
-      **3. Tone & Style:**
-      - Use professional, objective language
-      - Avoid speculation or unverified claims
-      - Use active voice when possible
-      - Keep language accessible to general audience
+      3. Recommendations:
+      - Suggest 1-2 concrete areas to consider (e.g., bonds, international, value stocks, sectors)
+      - Tie recommendations to the analysis (e.g., "Given high volatility in tech...")
+      - Be specific but not prescriptive (e.g., "consider diversifying into..." not "buy X")
 
-      **4. Length:**
-      - Target 300-400 words for a 1-page press release
-      - Include a brief summary at the end
-      - No fluff - every sentence should add value
-
+      4. Disclaimers:
+      - Include a brief disclaimer that this is informational, not personalized financial advice
+      - Do not guarantee returns or predict future performance
