@@ -20,6 +20,7 @@ node_modules/
 10_data_management/agentr/logs/*
 !10_data_management/agentr/logs/.gitkeep
 10_data_management/fixer/.env
+11_decision_support/.env
 z/
 10_data_management/agentpy/rsconnect-python/
 10_data_management/agentr/rsconnect/

@@ -1,0 +1,3 @@
+# Stage 3 — Reflection (submission)
+
+The model tended to weight **sector and task fit** (healthcare vs finance vs public engagement) and **seniority vs client pace** (e.g. putting steadier consultants on regulated, plan-driven clients). It often **underweighted soft risks** like **Dana’s stakeholder maturity** on **fast, political, or PE-style** accounts, and it may **overuse “strong communicator”** as a catch-all. I would **use this output only as a draft slate**: I’d **verify capacity**, **check for conflicts of interest**, and **run a short internal peer review** before trusting any live staffing decision.
